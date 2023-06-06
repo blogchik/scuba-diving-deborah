@@ -6,6 +6,7 @@
     --clr-blue: #4BC3F5;
     --clr-white: #fff;
     --clr-black: #181818;
+    --clr-black05: #181818c0;
 }
 
 ::-webkit-scrollbar
@@ -635,3 +636,277 @@ button
 }
 
 /* About - end */
+
+/* Service - start */
+
+.service
+{
+    background-image: url("https://www.oliveltours.com/wp-content/uploads/2021/11/1-11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: max-content;
+}
+
+.service *
+{
+    z-index: 2;
+}
+
+.service .blur
+{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(25,25,25,15);
+    background: linear-gradient(0deg, rgba(25,25,25,0.8) 0%, rgba(0,212,255,0) 100%);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.service .title
+{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--clr-white);
+    text-align: center;
+}
+
+.service .list
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 40px;
+}
+
+.service .list .item
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr-white);
+    width: 80%;
+    height: auto;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.service .list .item .image
+{
+    width: 100%;
+    height: auto;
+}
+
+.service .list .item .image img
+{
+    height: 100%;
+}
+
+.service .list .item .content
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: unset;
+    justify-content: unset;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    gap: 20px;
+}
+
+.service .list .item .content .title
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--clr-blue);
+    width: 100%;
+    text-align: left;
+}
+
+.service .list .item .content .text
+{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: var(--clr-black05);
+}
+
+.service .list .item .content .btn-2
+{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: auto;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--clr-blue);
+    transition: 0.3s all ease-in-out;
+}
+
+.service .list .item .content .btn-2 i
+{
+    margin-left: 10px;
+    transition: 0.3s all ease-in-out;
+}
+
+.service .list .item .content .btn-2:hover  i
+{
+    margin-left: 15px;
+}
+
+@media (min-width: 1280px)
+{
+
+    .service
+    {
+        background-image: url("https://www.oliveltours.com/wp-content/uploads/2021/11/1-11.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .service *
+    {
+        z-index: 2;
+    }
+    
+    .service .blur
+    {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(25,25,25,15);
+        background: linear-gradient(0deg, rgba(25,25,25,0.8) 0%, rgba(0,212,255,0) 100%);
+        backdrop-filter: blur(5px);
+        z-index: 1;
+    }
+    
+    .service .title
+    {
+        font-size: 36px;
+        font-weight: 600;
+        color: var(--clr-white);
+        text-align: center;
+    }
+    
+    .service .list
+    {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        gap: 40px;
+    }
+    
+    .service .list .item
+    {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--clr-white);
+        width: 300px;
+        height: auto;
+        border-radius: 2px;
+        overflow: hidden;
+    }
+    
+    .service .list .item .image
+    {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .service .list .item .image img
+    {
+        height: 100%;
+    }
+    
+    .service .list .item .content
+    {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        gap: 20px;
+    }
+    
+    .service .list .item .content .title
+    {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--clr-blue);
+        width: 100%;
+        text-align: left;
+    }
+    
+    .service .list .item .content .text
+    {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        color: var(--clr-black05);
+    }
+    
+    .service .list .item .content .btn-2
+    {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        height: auto;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+        color: var(--clr-blue);
+        transition: 0.3s all ease-in-out;
+    }
+    
+    .service .list .item .content .btn-2 i
+    {
+        margin-left: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    
+    .service .list .item .content .btn-2:hover  i
+    {
+        margin-left: 15px;
+    }
+
+}
+
+/* Service - end */
