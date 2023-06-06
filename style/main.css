@@ -1253,3 +1253,43 @@ button
 }
 
 /* Contacts - end */
+
+/* Footer - start */
+
+.footer
+{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--clr-blue);
+}
+
+.footer .logo img
+{
+    height: 40px;
+}
+
+.footer .side
+{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer .social
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+/* Footer - end */
